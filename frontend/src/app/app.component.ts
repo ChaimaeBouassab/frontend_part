@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HometComponent } from './homet/homet.component';
 
 
@@ -10,7 +10,7 @@ import { HometComponent } from './homet/homet.component';
   host: { 'ngSkipHydration': 'true' }, // Add this line to skip hydration
 
   standalone: true,
-  imports: [HometComponent]  // Include both components in the imports array
+  imports: [HometComponent,RouterOutlet, RouterLink, RouterLinkActive]  // Include both components in the imports array
 })
 export class AppComponent {
   title = 'maprojet';
